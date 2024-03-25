@@ -1,0 +1,11 @@
+<h1> Games</h1>
+
+<% @games.each do |game| %>
+  <div id="game-<%= game.id%>">
+    <li>Game Name: <%= game.name %> </li>
+    <li>Year Released: <%= game.year_released %> </li>
+    <li>Age Verification: <%= game.age_verification %> </li>
+    <p><%= link_to "Edit Game: #{game.name}", "/games/#{game.id}/edit", method: :get%></p>
+    <p><%= link_to "Delete Game", "/games/#{game.id}", data: { turbo_method: :delete } %></p>
+  </div>
+<% end %>

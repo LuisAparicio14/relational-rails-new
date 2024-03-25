@@ -1,0 +1,20 @@
+<p><%= link_to "Create Game", "/consoles/#{@console.id}/games/new", method: :get %></p>
+<p><%= link_to "Alphabetical Order", "/consoles/#{@console.id}/games?order=alphabetical", method: :get %></p>
+
+<% @console_games.each do |console_game| %>
+  <div id="console_game-<%= console_game.id %>">
+    <h3><%= console_game.name %></h3>
+    <p><%= console_game.year_released %></p>
+    <p><%= console_game.age_verification %></p>
+  </div>
+<% end %>
+
+<section class="game_threshold">
+  <%= form_with url: "/consoles/#{@console.id}/games", method: :get, data: { turbo: false } do |f| %>
+
+    <%= f.label :threshold, "Games year released:" %>
+    <%= f.number_field :threshold %>
+
+    <%= f.submit "Submit"%>
+  <% end %>
+</section>

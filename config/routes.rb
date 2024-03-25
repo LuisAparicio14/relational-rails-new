@@ -7,4 +7,21 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  get '/consoles', to: 'consoles#index'
+  get '/consoles/new', to: 'consoles#new'
+  post '/consoles', to: 'consoles#create'
+  get '/consoles/:id', to: 'consoles#show'
+  get '/consoles/:id/edit', to: 'consoles#edit'
+  patch '/consoles/:id', to: 'consoles#update'
+  delete '/consoles/:id', to: 'consoles#destroy'
+
+  get '/games', to: 'games#index'
+  get '/games/:id', to: 'games#show'
+  get '/games/:id/edit', to: 'games#edit'
+  patch '/games/:id', to: 'games#update'
+  delete '/games/:id', to: 'games#destroy'
+
+  get '/consoles/:id/games', to: 'console_games#index'
+  get '/consoles/:id/games/new', to: 'console_games#new'
+  post '/consoles/:id/games', to: 'console_games#create'
 end

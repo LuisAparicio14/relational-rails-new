@@ -1,0 +1,10 @@
+<h1> Consoles</h1>
+<p><%= link_to "New Console", "/consoles/new", method: :get %></p>
+<% @consoles.each do |console| %>
+  <div id="console-<%= console.id %>">
+    <h3> Name: <%= console.name %> </h3>
+    <p> Created at: <%= console.created_at %></p>
+    <p><%= link_to "Edit Console: #{console.name}", "/consoles/#{console.id}/edit", method: :get %></p>
+    <p><%= link_to "Delete Console", "/consoles/#{console.id}", data: { turbo_method: :delete } %></p>
+  </div>
+<% end %>

@@ -1,0 +1,7 @@
+<p><%= link_to "Delete Console", "/consoles/#{@console.id}", method: :delete %></p>
+<h1>Name: <%= @console.name%></h1>
+<p><%=link_to "Update Console", "/consoles/#{@console.id}/edit", method: :get %></p>
+<p><%=link_to "Games List", "/consoles/#{@console.id}/games", method: :get %></p>
+<p>Games Count: <%=@console.game_count%></p>
+<p>Price: <%= @console.price%></p>
+<p>Available: <%= @console.available%></p>

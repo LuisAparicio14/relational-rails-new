@@ -1,0 +1,12 @@
+<%= form_with url: "/consoles/#{@console.id}/games", method: :post do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :year_released %>
+  <%= f.number_field :year_released %>
+
+  <%= f.label :age_verification %>
+  <%= f.text_field :age_verification %>
+
+  <%= f.submit "Create Game"%>
+<% end %>

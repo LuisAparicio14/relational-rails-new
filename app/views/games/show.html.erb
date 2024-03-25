@@ -1,0 +1,6 @@
+<p><%= link_to "Delete Game", "/games/#{@game.id}", method: :delete %></p>
+<%= link_to "Update Game", "/games/#{@game.id}/edit", method: :get %>
+<h1><%= @game.name%></h1>
+
+<h2><%= @game.year_released%></h2>
+<h3><%= @game.age_verification%></h3>

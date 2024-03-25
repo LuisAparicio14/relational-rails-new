@@ -1,0 +1,12 @@
+<%= form_with url: "/consoles/#{@console.id}", method: :patch do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+
+  <%= f.label :available %>
+  <%= f.text_field :available %>
+
+  <%= f.submit "Submit"%>
+<% end %>
