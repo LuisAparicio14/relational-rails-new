@@ -16,6 +16,10 @@ RSpec.describe Game, type: :model do
     expect(Game.game_true).to eq([@game_2, @game_3])
   end
 
+  it "#alphabetical_order" do
+    expect(Game.alphabetical_order).to eq([@game_3, @game_1, @game_2])
+  end
+
   it "#year_over" do
     expect(Game.year_over(2016)).to eq([@game_1])
   end

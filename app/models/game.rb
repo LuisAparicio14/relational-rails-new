@@ -12,4 +12,4 @@ class Game < ApplicationRecord
   def self.year_over(threshold)
     where("year_released > ?", threshold)
   end
-end
+end 
