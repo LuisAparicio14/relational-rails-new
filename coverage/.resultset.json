@@ -636,17 +636,47 @@
           null
         ]
       },
+      "/Users/luis1224/module_2/relational-rails-new/spec/models/console_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/luis1224/module_2/relational-rails-new/app/models/console.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          12,
+          13,
           null,
           null,
           1,
-          6,
+          7,
           null,
           null
         ]
@@ -658,13 +688,24 @@
           null
         ]
       },
-      "/Users/luis1224/module_2/relational-rails-new/app/models/game.rb": {
+      "/Users/luis1224/module_2/relational-rails-new/spec/models/game_spec.rb": {
         "lines": [
-          1,
           1,
           null,
           1,
-          10,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
           null,
           null,
           1,
@@ -677,10 +718,30 @@
           null
         ]
       },
+      "/Users/luis1224/module_2/relational-rails-new/app/models/game.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          11,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/luis1224/module_2/relational-rails-new/app/controllers/console_games_controller.rb": {
         "lines": [
           1,
           1,
+          null,
           8,
           null,
           8,
@@ -791,6 +852,6 @@
         ]
       }
     },
-    "timestamp": 1711394939
+    "timestamp": 1711483664
   }
 }
